@@ -1,0 +1,96 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+   
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 2.6rem;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(32,35,41);
+    color: white;
+}
+main{
+    margin: auto;
+    width: 80%;
+    height: 40%;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    
+}
+main > span {
+    width: 96%;
+    height: 92%;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(60, 62, 68);
+    display: grid;
+    grid-template-columns: 40% 45%;
+    grid-template-rows: 100%;
+}
+span > figure {
+    width: 100%;
+    height: 100%;
+}
+span > figure > img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+span > section {
+    padding: 12px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14% 26% 30% 30%;
+}
+li.status{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    vertical-align: middle;
+}
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 0.7em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content:"\2022"; font-size:15pt;
+    content:"\2022"; font-size:15pt;
+    vertical-align: middle;
+  }
+  ul li#status2::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: green; /* Change the color */
+  }
+  ul li#status4::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: green; /* Change the color */
+  }
+  span.localization, span.lastseen{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  span.localization > label, span.lastseen > label {
+    color: grey;
+  }
+  span.localization > p.localization, span.lastseen > p.lastseen{
+    font-size: 1.5rem;
+  }
